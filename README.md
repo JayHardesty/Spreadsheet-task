@@ -1,4 +1,4 @@
-#  Spreadsheet Task for weav.io
+#  Spreadsheet Task
 ### Jay Hardesty
 
 ## Design Notes
