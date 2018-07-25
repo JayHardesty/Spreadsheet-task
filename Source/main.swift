@@ -9,7 +9,7 @@
 import Foundation
 
 guard let file = CommandLine.arguments.last, CommandLine.arguments.count == 2, file.hasSuffix(".csv") else {
-    print("Usage: stask <input file>")
+    print("Usage: spreadsheet <input file>")
     exit(0)
 }
 
