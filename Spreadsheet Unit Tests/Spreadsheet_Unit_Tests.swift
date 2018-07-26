@@ -92,8 +92,19 @@ class Spreadsheet_Unit_Tests: XCTestCase {
         let url = URL(fileURLWithPath: path)
 
         Spreadsheet.soleInstance.read(fromURL: url) { cells, _ in
-                            // 1 2 + -, A1
+            // 1 2 + -, A1
             let expected = ["#ERR", "#ERR"]
+            XCTAssert(cells!.map { $0.result } == expected)
+        }
+    }
+    
+    func testZeroDivide() {
+        path = bundle.path(forResource: "zeroDivide", ofType: "csv")
+        let url = URL(fileURLWithPath: path)
+        
+        Spreadsheet.soleInstance.read(fromURL: url) { cells, _ in
+            // 3 1 1 - /
+            let expected = ["#ERR"]
             XCTAssert(cells!.map { $0.result } == expected)
         }
     }

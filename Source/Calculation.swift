@@ -44,6 +44,9 @@ class Calculation {
     private func processNext(_ item: String) throws {
         if let op = operators[item] {
             if let b = stack.pop(), let a = stack.pop() {
+                if item == "/" && b == 0 {
+                    throw CalculationError.zeroDivide
+                }
                 stack.push(op(a, b))
             } else {
                 throw CalculationError.missingData
@@ -61,4 +64,5 @@ class Calculation {
 enum CalculationError: Error {
     case missingData
     case invalidData
+    case zeroDivide
 }

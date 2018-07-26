@@ -23,6 +23,7 @@
 		6957453821092C5C000CB1CF /* tooManyArgs.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6957453621092C5C000CB1CF /* tooManyArgs.csv */; };
 		6957453921092C5C000CB1CF /* tooManyOps.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6957453721092C5C000CB1CF /* tooManyOps.csv */; };
 		698FA2F02107E59F00068A83 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698FA2EF2107E59F00068A83 /* main.swift */; };
+		69ED2D8B2109BED500EF7C30 /* zeroDivide.csv in Resources */ = {isa = PBXBuildFile; fileRef = 69ED2D8A2109BED400EF7C30 /* zeroDivide.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,6 +55,7 @@
 		6957453A21092E53000CB1CF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
 		698FA2EC2107E59F00068A83 /* spreadsheet */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = spreadsheet; sourceTree = BUILT_PRODUCTS_DIR; };
 		698FA2EF2107E59F00068A83 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		69ED2D8A2109BED400EF7C30 /* zeroDivide.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zeroDivide.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				6957453221092213000CB1CF /* taskExample.csv */,
 				6957453621092C5C000CB1CF /* tooManyArgs.csv */,
 				6957453721092C5C000CB1CF /* tooManyOps.csv */,
+				69ED2D8A2109BED400EF7C30 /* zeroDivide.csv */,
 			);
 			path = TestData;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6957452F21091D67000CB1CF /* basic.csv in Resources */,
+				69ED2D8B2109BED500EF7C30 /* zeroDivide.csv in Resources */,
 				695745312109219A000CB1CF /* ops.csv in Resources */,
 				6957453521092213000CB1CF /* circularity.csv in Resources */,
 				6957453821092C5C000CB1CF /* tooManyArgs.csv in Resources */,
